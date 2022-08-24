@@ -1,0 +1,621 @@
+/*/ ESTILOS GENERALES/*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: "ubuntu";
+    background-color: rgb(160, 160, 145);
+    font-size: 62.5%;
+    color: rgb(49, 48, 48);
+    font-family: "roboto";
+    font-weight: bolder;
+
+
+
+
+
+}
+
+
+
+button {
+    padding: 7px 37px 9px 37px;
+
+    background-color: rgb(221, 130, 69);
+    border-radius: 7px;
+    border: 1px rgb(25, 24, 24) solid;
+    margin: 1rem;
+    color: beige;
+}
+
+select {
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(221, 130, 69);
+    border-radius: 7px;
+    border: 1px rgb(14, 13, 13) solid;
+    color: beige;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: beige;
+}
+
+
+
+/*/GRID/*/
+#ContenedorSacro {
+
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "header header"
+        /*/inicio/*/
+        "inicioTitulo inicioTitulo"
+        "enviarARegistro enviarARegistro"
+        "deliciasDeLaCasa deliciasDeLaCasa"
+        "seccionContacto seccionContacto"
+        /*/nosotros/*/
+        "nosotros nosotros"
+        /*/cursos/*/
+        "cursos cursos"
+        /*/iniciarSesion/*/
+        "backgroundSesion"
+        /*/footer/*/
+        "footer footer"
+}
+
+
+
+
+/*/  HEADER/*/
+header {
+    grid-area: header;
+    background-color: #f38f4d;
+    font-size: 1.2rem;
+    padding: 20px;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 30px rgb(71, 70, 70);
+
+
+}
+.logoAndSearch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.parrafoBuscar{
+    margin-top: 30px;
+    }
+   
+    
+
+
+.logo {
+    text-align: center;
+    font-size: 60px;
+
+
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: bisque;
+
+}
+
+
+
+.cabecera li:hover {
+    border: 5px black;
+    transition: all 400ms ease;
+    transform: translateY(25%);
+    
+
+}
+.navegacion{
+    margin-right: 50px;
+    transition: all 250ms ease;
+}
+
+.cabecera {
+    padding: 0px;
+    margin-left: 95px;
+    
+
+}
+
+.cabecera a {
+    color: rgb(50, 42, 42);
+    text-decoration: none;
+    color: bisque;
+
+
+}
+
+.cabecera li {
+
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px 5px 13px;
+    padding: 0px 20px 0px 20px;
+
+
+
+
+}
+a.active{
+    color: rgb(70, 67, 67);
+    
+}
+
+.box {
+    padding: 0px;
+    
+   
+
+
+}
+
+
+
+
+/*/INICIO/*/
+
+
+.h1Seccion {
+    font-size: 40px;
+    line-height: 10px;
+    margin: 5%;
+}
+
+.llevarARegistroa {
+    text-decoration: none;
+    color: beige;
+}
+
+.llevarARegistrarse {
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(221, 130, 69);
+    border-radius: 7px;
+    border: 0px;
+}
+
+.inicioTitulo {
+    grid-area: inicioTitulo;
+    display: flex;
+    font-size: 3rem;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/img/wallpaperinicio.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 589px;
+    text-align: center;
+    color: beige;
+
+}
+
+.h1Bienvenido {
+    padding-top: 220px;
+    font-size: 4.5rem;
+    opacity: 0.7;
+}
+
+.enviarARegistro {
+    grid-area: enviarARegistro;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0px 60px 0px
+}
+
+.deliciasDeLaCasa {
+
+    grid-area: deliciasDeLaCasa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+    text-align: center;
+
+
+}
+
+.h2DeliciasDeLaCasa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+.imagenesDeComida{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img {
+
+    margin: 3%;
+    border: 1px solid rgb(82, 82, 80);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(63, 62, 62);
+    
+    
+}
+
+
+
+
+
+.seccionContacto {
+    grid-area: seccionContacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.ubicacionYBotones {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.botonesContacto {
+    text-align: center;
+
+}
+
+.telButton {
+    padding: 10px 40px 10px 40px;
+
+    background-color: rgb(221, 130, 69);
+    border-radius: 7px;
+    color: beige;
+    border: 0px;
+}
+
+.igButton {
+    padding: 10px 40px 10px 40px;
+
+    background-color: rgb(221, 130, 69);
+    border-radius: 7px;
+    color: beige;
+    border: 0px;
+}
+
+.h1Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+/*/NOSOTROS/*/
+
+.nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 100px 40px 100px 40px;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.gif {
+    width: 30% auto;
+    height: 30% auto;
+    padding: 0px 0px 1.8rem 1.8rem;
+    border: 0px solid;
+    border-radius: 10px;
+
+}
+
+
+/*/CURSOS/*/
+.cursosContainer {
+    grid-area: cursos;
+    display: flex;
+    flex-direction:row;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.imgCurso{
+    width: 100%;
+    border-radius: 10px;
+    width: 313.188px;
+    height:313.188px ;
+
+}
+
+.cursosTitulo {
+    margin-top: 100px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: bisque;
+    
+}
+
+.cards {
+    background-color: rgb(169, 166, 166);
+    color: bisque;
+    font-size: 1rem;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0,0, 0,0.2);
+    
+    width: 90%;
+    
+    
+    
+    
+
+}
+.cards:hover{
+    
+    box-shadow: 5px 5px 10px rgba(0,0, 0,0.2);
+    transform: translateY(-5%);
+    transition: all 400ms ease;
+}
+
+.parrafoCurso {
+    margin: 5%;
+    line-height: 1.5rem;
+    cursor: default     ;
+    color: rgb(238, 239, 239);
+}
+
+
+
+
+
+/*/VARIEDADES/*/
+
+.flexProductos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+.imgprod {
+    border: 0px solid;
+    border-radius: 10px;
+    width: 13.5rem;
+    height: 12.5rem;
+    box-shadow: 5px 5px 8px rgb(101, 101, 101);
+}
+
+.h1variedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.prod {
+    margin: 5%
+}
+.hrProd{
+    display: inline-block;
+    border: 1px solid rgb(33, 32, 32);
+    vertical-align: middle;
+    width: 65px;
+    margin: 4%;
+   
+
+}
+.especificacionProd{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.selectProd{
+    margin-bottom: 5%;
+}
+
+
+/*/INICIAR SESION/*/
+
+#backgroundSesion {
+    grid-area: backgroundSesion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image: url("../assets/img/coffeebackground.gif");
+    background-size: cover;
+    color: beige;
+    padding: 10% 0px 10% 0px;
+
+
+}
+
+/*/REGISTRARSE/*/
+.formularioUsuario {
+    display: flex;
+    align-items: center;
+    
+
+
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-evenly;
+    margin: 5%;
+    font-size: 1rem;
+    width: 30rem;
+    height: 40rem;
+    background-color: #f38f4d;
+    border: 2px grey solid;
+    border-radius: 15px;
+    margin-left: 33%;
+    box-shadow: 2px 2px 3px rgb(76, 75, 75);
+}
+
+.h1formulario {
+    font-size: 1.8rem;
+    margin: 5%
+}
+
+.inputForm {
+    margin: 10px;
+    height: 25px;
+    width: 208px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+label {
+    text-align: left;
+}
+
+
+
+
+/*/FOOTER/*/
+
+
+footer {
+
+    grid-area: footer;
+    font-size: 1rem;
+    color: beige;
+    background-color: rgb(48, 45, 45);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: 2.5rem;
+}
+
+.instagramImg {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.whatsapImg {
+    width: 50px;
+    height: 50px;
+}
+
+.img,
+iframe {
+    width: 350px;
+    height: 250px;
+}
+.buttonBuscar{
+    background-color: rgb(63, 58, 58);
+    border: 0px;
+    border-radius: 10px;
+    color: beige;
+} 
+
+
+
+/*/MEDIA QUERIE/*/
+
+@media (max-width:768px){
+    .formulario{
+        background-color: gray;
+        margin: 5% 0% 5% 0%;
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+        border: solid black 2px;
+    }
+    .ubicacionYBotones{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img{
+        width: 40%;
+        margin:10px;
+        
+    }
+   
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .h1Seccion{
+        line-height: 30px;
+        margin:0px
+    }
+
+    .cabecera li{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .inputBuscar , .buttonBuscar{
+        display: none;
+
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cursosContainer{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        margin-left: 25%;
+    }
+    .imgCurso{
+        width: 100%;
+    }
+}
