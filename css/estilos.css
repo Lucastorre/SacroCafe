@@ -95,10 +95,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 
 }
 .parrafoBuscar{
     margin-top: 30px;
+
     }
    
     
@@ -107,6 +109,29 @@ header {
 .logo {
     text-align: center;
     font-size: 60px;
+    animation-name: logomovimiento;
+    animation-iteration-count: 2;
+    animation-duration: 3s;
+
+    @keyframes logomovimiento {
+        
+        0%{
+            transform:translateX(100px);
+        }
+        30%{
+            transform:skew(50deg,50deg);
+        }
+        50%{
+            transform:rotate(45deg)
+
+        }
+        75%{
+            transform:translate(100px)
+        }
+        100%{
+            transform:scale(2,2);
+        }
+    }
 
 
 
@@ -259,6 +284,29 @@ a.active{
     border: 1px solid rgb(82, 82, 80);
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(63, 62, 62);
+    animation-name: logomovimiento;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+
+    @keyframes logomovimiento {
+        
+        0%{
+            transform:translateX(100px);
+        }
+        30%{
+            transform:skew(50deg,50deg);
+        }
+        50%{
+            transform:rotate(45deg)
+
+        }
+        75%{
+            transform:translate(100px)
+        }
+        100%{
+            transform:scale(2,2);
+        }
+    }
     
     
 }

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <title> Quienes somos</title>
     <meta charset="UTF-8">
@@ -24,7 +25,7 @@
     <div id="ContenedorSacro border">
         <header class="border">
             <div>
-                <h1 class="logo"><a href="../index.html">SACRO</a></h1>
+                <h1  data-aos="zoom-out-right" class="logo"><a href="../index.html">SACRO</a></h1>
 
             </div>
             <div>
@@ -53,12 +54,12 @@
 
     <div class="nosotros border">
         <div>
-            <img src="../assets/img/cafefondo.gif" alt="imagencafeinfosobrenosotros" class="gif border">
+            <img data-aos="zoom-in" src="../assets/img/cafefondo.gif" alt="imagencafeinfosobrenosotros" class="gif border">
         </div>
         <div class="nosotrosTexto border">
-            <h2>Nosotros</h2>
+            <h2 data-aos="zoom-in">Nosotros</h2>
             <br>
-            <p> Somos un grupo de amigos amantes del cafe, motivados y apasionados por crecer y compartir los mejores
+            <p data-aos="zoom-in"> Somos un grupo de amigos amantes del cafe, motivados y apasionados por crecer y compartir los mejores
                 sabores
                 a traves de nuestros distintos origenes. En el año 2019 comenzaron nuestros primeros pasos , teniendo
                 Contacto
@@ -113,7 +114,10 @@
         <p class="parrafoBuscar"> <input class="inputBuscar" type="search" placeholder="producto"><button class="buttonBuscar" type="search" value="buscar">buscar</button></p>   
     </footer>
 </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 
