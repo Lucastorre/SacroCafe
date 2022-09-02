@@ -379,8 +379,8 @@ a.active{
 }
 
 .gif {
-    width: 30% auto;
-    height: 40% auto;
+    width:  auto;
+    height: 26rem;
     border: 0px solid;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(117, 115, 115);
@@ -525,9 +525,11 @@ a.active{
 }
 
 /*/REGISTRARSE/*/
-.formularioUsuario {
+form{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    width: auto;
     
 
 
@@ -547,7 +549,7 @@ a.active{
     background-color: #f38f4d;
     border: 2px grey solid;
     border-radius: 15px;
-    margin-left: 33%;
+   
     box-shadow: 2px 2px 3px rgb(76, 75, 75);
 }
 
@@ -630,8 +632,9 @@ iframe {
     .formulario{
         background-color: gray;
         margin: 5% 0% 5% 0%;
-        width: 100%;
+        width: auto;
     }
+    
     header{
         display: flex;
         flex-direction: column;
@@ -720,5 +723,12 @@ iframe {
     .imgCurso{
         width: 100%;
        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: auto;
     }
 }
